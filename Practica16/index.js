@@ -69,4 +69,4 @@ console.log(typeof variable5);
 console.log(typeof variable5.telefono);
 
 let saludo, nombre ="juan";
-console.log(nombre)
+console.log(nombre);
