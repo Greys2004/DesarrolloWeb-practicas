@@ -52,6 +52,9 @@ if (a != b){
 let comparacion = a > b ? "a es mayor que b" : "a es menor o igual que b";
 console.log(comparacion);
 
+let d = 19;
+let edad = d <18 ? "Eres menor de edad" : "Eres mayor de edad";
+console.log(edad);
 
 //FUNCIONES
 let x = 100;
@@ -63,3 +66,45 @@ function multiplicarNumeros(x,y){
 
 let resultado = multiplicarNumeros(x,y);
 console.log("El resultado de la multiplicacion con funciones es de: " , resultado);
+
+//FUNCION 2
+
+function calcularAreaCirculo (radio){
+    //const PI = 3.1416;
+    //let area = PI * radio **2;
+    let area = Math.PI * Math.pow(radio,2);
+    return area
+}
+
+console.log("Area del circulo ", calcularAreaCirculo(10));
+
+//FUNCIONES 3
+function toCelsius(farenheit){
+    return (5/9) * (farenheit - 32);
+}
+
+let temperatura = toCelsius(77);
+console.log("Temparatura del farenheit a celsius es de: ", temperatura);
+
+//FUNCIONES 4
+
+function edadX2(edad){
+    return edad * 2;
+}
+console.log("La edad multiplicada x2 es de: ", edadX2(20));
+
+//FUNCION FLECHA
+let hello = function() {
+    return "Hello World!";
+}
+console.log(hello());
+
+hi = () => {
+    return "Hello World!";
+}
+console.log(hi());
+
+//FUNCION FLECHA EDAD
+let edadx2 = (edad) =>  edad * 2;
+
+console.log(edadx2(30));
