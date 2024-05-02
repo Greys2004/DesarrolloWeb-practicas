@@ -62,16 +62,33 @@ let peliculas = [
 let listaPeliculas = document.getElementById('listaPeliculas');
 
 // Variable para almacenar el HTML de las películas
-let htmlPeliculas = "";
 
 
 for (let pelicula of peliculas) {
-    // Construir el HTML de cada película y agregarlo a la variable
-    htmlPeliculas += "<div class='col-12 col-md-4 text-center'>";
-    htmlPeliculas += "<h1 class='titulo-pelicula'>" + pelicula.nombre + "</h1>";
-    htmlPeliculas += "<img src='" + pelicula.imagen + "' class='w-75'>";
-    htmlPeliculas += "</div>";
+    console.log(pelicula.nombre);
+    listaPeliculas.innerHTML +=
+    "<div class= 'col-12 col-md-4 text-center'>" +
+    "<h1 class='titulo-pelicula'>" + pelicula.nombre + "</h1>" +
+    "<img src='" + pelicula.imagen + "'class = 'w-75'>"+
+    "</div>";
 }
 
-// Asignar el HTML completo al contenedor de películas
-listaPeliculas.innerHTML = htmlPeliculas;
+
+/////////////////////////////////////////////////////////
+j=1;
+
+while (j <= 30){
+    console.log(j);
+    j++;
+}
+
+let result = '';
+let i = 0;
+
+do{
+    i = i + 1;
+    result = result + 1;
+
+} while (i < 5)
+
+console.log(result);
