@@ -78,15 +78,19 @@ let mostrarTareas = () => {
             </div>
             <div class = "col-12 col-md-2 border p-3">
                 <strong><i class="bi bi-film"></i> &nbsp Video: </strong>
-                <video width="160" height="90" controls autoplay >
+                ${tarea.video ? 
+                `<video width="160" height="90" controls>
                     <source src="${tarea.video}" type="video/mp4">
-                </video><br>
+                </video>` : 
+                '<p>Sin video</p>'}
             </div>
             <div class = "col-12 col-md-2 border p-3">
-            <strong><i class="bi bi-music-note"></i>&nbsp Audio: </strong>
-                <audio controls style="width: 100%; max-width: 500px;">
+                <strong><i class="bi bi-music-note"></i>&nbsp Audio: </strong>
+                ${tarea.audio ? 
+                `<audio controls style="width: 100%; max-width: 500px;">
                     <source src="${tarea.audio}" type="audio/mpeg">
-                </audio><br>
+                </audio>` : 
+                '<p>Sin audio</p>'}
             </div>
             <div class = "col-12 col-md-2 border p-5">
                 <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#editarModal" onClick="abrirModalEditar(${indice})"><i class="bi bi-pencil"></i> &nbsp Editar</button>
