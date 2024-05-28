@@ -20,7 +20,7 @@ fetch(URL)
                         <div class="card-body">
                             <h5 class="card-title">${producto.title.slice(0,20)}</h5>
                             <p class="card-text">${producto.description.slice(0,70)}</p>
-                            <p class="card-text text-danger">${producto.price}</p>
+                            <p class="card-text text-danger">$${producto.price}</p>
                             <a href="#" class="btn btn-primary">Comprar</a>
                         </div>
                     </div>
